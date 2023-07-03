@@ -17,7 +17,7 @@ const ProfileCard = ({ userId }) => {
   const { data: profile, isLoading } = useProfileDetailsById({ userId })
 
   if (isLoading || !profile) {
-    return 'cargand'
+    return 'cargando'
   }
 
   return (

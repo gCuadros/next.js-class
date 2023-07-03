@@ -5,7 +5,8 @@ import Link from 'next/link'
 import { SiNextdotjs } from 'react-icons/si'
 const links = [
   { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/blog' }
+  { label: 'Blog', href: '/blog' },
+  { label: 'Users', href: '/users' }
 ]
 
 const Navbar = () => {
