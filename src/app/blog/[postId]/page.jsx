@@ -1,13 +1,14 @@
 import { fetcher } from '@/api/utils/fetcher'
+import PostDetail from '../../../components/PostDetail'
 
 const PostPage = async ({ params }) => {
   const { postId } = params
-  await new Promise((resolve) => setTimeout(resolve, 3000))
+
   const post = await fetcher(
     `https://jsonplaceholder.typicode.com/posts/${postId}`
   )
 
-  return post.body
+  return <PostDetail title={post.title} description={post.body} />
 }
 
 export default PostPage

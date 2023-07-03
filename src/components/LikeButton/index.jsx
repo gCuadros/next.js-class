@@ -13,7 +13,11 @@ const LikeButton = () => {
       color='red'
       transition='all ease 0.3'
       _hover={{ background: 'none', opacity: 0.5 }}
-      onClick={() => setLiked(!liked)}
+      onClick={(e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        setLiked(!liked)
+      }}
     >
       {liked ? <Icon as={AiFillHeart} /> : <Icon as={AiOutlineHeart} />}
     </Button>

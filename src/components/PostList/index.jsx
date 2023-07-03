@@ -1,8 +1,9 @@
 'use client'
 
 import { HStack, VStack } from '@chakra-ui/react'
-import LikeButton from '../LikeButton'
+
 import Link from 'next/link'
+import PostItem from '../PostItem'
 
 const PostList = ({ posts }) => {
   return (
@@ -11,8 +12,13 @@ const PostList = ({ posts }) => {
       <VStack alignItems='flex-start'>
         {posts.map((post) => (
           <HStack key={post.id}>
-            <Link href={`blog/${post.id}`}>{post.title}</Link>
-            <LikeButton />
+            <Link href={`blog/${post.id}`}>
+              <PostItem
+                title={post.title}
+                description={post.body}
+                userId={post.userId}
+              />
+            </Link>
           </HStack>
         ))}
       </VStack>

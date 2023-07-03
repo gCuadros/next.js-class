@@ -7,6 +7,13 @@ interface RequestInit {
   next?: NextFetchRequestConfig | undefined
 }
 
+// getStaticProps
+// fetch(url).then((res) =>res.json())
+
+// getServerSideProps
+// fetch(url, {cache: "no-store"}).then((res) =>res.json())
+
+// ISR
 export const fetcher = <T>(
   url: string,
   options: RequestInit = {}
