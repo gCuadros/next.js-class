@@ -13,7 +13,7 @@ interface RequestInit {
 // getServerSideProps
 // fetch(url, {cache: "no-store"}).then((res) =>res.json())
 
-// ISR
+// ISR(Incremental static regeneration)
 export const fetcher = <T>(
   url: string,
   options: RequestInit = {}
