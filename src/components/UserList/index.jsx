@@ -4,6 +4,7 @@ import { Text, VStack } from '@chakra-ui/react'
 
 const UserList = ({ users }) => {
   if (!users) return null
+  console.log(users)
 
   return (
     <VStack>
