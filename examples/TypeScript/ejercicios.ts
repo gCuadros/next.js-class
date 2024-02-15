@@ -24,6 +24,12 @@ const persona: Persona = {
   esEstudiante: true
 }
 
+interface Estudiante extends Persona {
+  universidad: string,
+  matricula: number,
+  curso: number,
+  clase: string
+}
 const estudiante = {
   nombre: 'Alice',
   apellido: 'Smith',
