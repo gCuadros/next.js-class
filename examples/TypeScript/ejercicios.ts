@@ -25,3 +25,11 @@ const estudiante = {
   clase : 'A'
 }
 
+const trabajadora = {
+  nombre: 'Alice',
+  apellido: 'Smith',
+  estadoCivil: 'soltera',
+  edad: 30,
+  empresa: 'Google',
+  cargo: 'Software Engineer'
+}
