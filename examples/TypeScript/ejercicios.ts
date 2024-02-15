@@ -30,7 +30,7 @@ interface Estudiante extends Persona {
   curso: number,
   clase: string
 }
-const estudiante = {
+const estudiante: Estudiante = {
   nombre: 'Alice',
   apellido: 'Smith',
   estadoCivil: 'soltera',
@@ -46,7 +46,7 @@ interface Trabajadora extends Persona {
   cargo: string
 }
 
-const trabajadora = {
+const trabajadora: Trabajadora = {
   nombre: 'Alice',
   apellido: 'Smith',
   estadoCivil: 'soltera',
