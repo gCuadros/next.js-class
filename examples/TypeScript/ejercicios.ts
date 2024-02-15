@@ -42,6 +42,11 @@ const estudiante = {
   clase : 'A'
 }
 
+interface Trabajadora extends Persona {
+  empresa: string,
+  cargo: string
+}
+
 const trabajadora = {
   nombre: 'Alice',
   apellido: 'Smith',
