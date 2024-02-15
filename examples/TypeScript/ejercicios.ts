@@ -1,6 +1,6 @@
-const nombre = 'Alice' // String
-const edad = 30 // Number
-const esEstudiante = true // Boolean
+const nombre: string = 'Alice' // String
+const edad: number = 30 // Number
+const esEstudiante: boolean = true // Boolean
 
 function saluda(nombre) {
   return `Hola, ${nombre}!`
