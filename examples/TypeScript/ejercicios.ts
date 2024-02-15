@@ -1,12 +1,20 @@
-const nombre: String = 'Alice' // String
-const edad: Number = 30 // Number
-const esEstudiante: Boolean = true // Boolean
+const nombre: string = 'Alice' // String
+const edad: number = 30 // Number
+const esEstudiante: boolean = true // Boolean
 
 function saluda(nombre) {
   return `Hola, ${nombre}!`
 }
 
-const persona = {
+interface Persona {
+  nombre: string,
+  apellido: string,
+  estadoCivil: string,
+  edad: number,
+  esEstudiante: boolean
+}
+
+const persona: Persona = {
   nombre: 'Alice',
   apellido: 'Smith',
   estadoCivil: 'soltera',
