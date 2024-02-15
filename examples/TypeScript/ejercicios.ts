@@ -55,3 +55,4 @@ const trabajadora = {
   empresa: 'Google',
   cargo: 'Software Engineer'
 }
+
