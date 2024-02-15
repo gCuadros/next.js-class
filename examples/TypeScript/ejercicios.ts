@@ -6,6 +6,14 @@ function saluda(nombre) {
   return `Hola, ${nombre}!`
 }
 
+interface Persona {
+  nombre: string,
+  apellido: string,
+  estadoCivil: string,
+  edad: number,
+  esEstudiante: boolean
+}
+
 const persona: Persona = {
   nombre: 'Alice',
   apellido: 'Smith',
@@ -14,12 +22,11 @@ const persona: Persona = {
   esEstudiante: true
 }
 
-interface Persona {
-  nombre: string,
-  apellido: string,
-  estadoCivil: string,
-  edad: number,
-  esEstudiante: boolean
+interface Estudiante extends Persona {
+  universidad: string,
+  matricula: number,
+  curso: number,
+  clase: string
 }
 
 const estudiante = {
